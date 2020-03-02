@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv('test_original.csv', sep=';')
+df = pd.read_csv('received-files/test.csv', sep=';')
 
 
 # check if each row has all compulsory values not null
@@ -15,5 +15,5 @@ for index, row in df.loc[df['test_status'] == 'SCORING_SCORED'].iterrows():
         df.drop(index, inplace=True)
 
 # save filtered data
-df.to_csv('test.csv', sep=';', index=False)
+df.to_csv('corrected-files/test.csv', sep=';', index=False)
 

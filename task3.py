@@ -1,8 +1,8 @@
 import pandas as pd
 
 # read data
-class_df = pd.read_csv('class.csv', sep=';')
-test_df = pd.read_csv('test.csv', sep=';')
+class_df = pd.read_csv('corrected-files/class.csv', sep=';')
+test_df = pd.read_csv('corrected-files/test.csv', sep=';')
 
 # keep necessary columns only
 class_df = class_df[['id', 'name', 'teaching_hours']]

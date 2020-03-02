@@ -1,8 +1,8 @@
 import pandas as pd
 
 # read data
-class_df = pd.read_csv('class.csv', sep=';')
-test_df = pd.read_csv('test.csv', sep=';')
+class_df = pd.read_csv('corrected-files/class.csv', sep=';')
+test_df = pd.read_csv('corrected-files/test.csv', sep=';')
 
 # keep authorized and marked as scoring_scored tests only
 test_df = test_df.loc[(test_df['test_status'] == 'SCORING_SCORED') & (test_df['authorized_at'].notnull())]

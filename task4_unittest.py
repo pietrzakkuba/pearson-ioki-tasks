@@ -1,6 +1,6 @@
 import pandas as pd
 
-test_df = pd.read_csv('test.csv', sep=';')
+test_df = pd.read_csv('corrected-files/test.csv', sep=';')
 
 # get overall score values from first class
 print(test_df.loc[(test_df['class_id'] == 1) & (test_df['overall_score'].notnull())]['overall_score'])
